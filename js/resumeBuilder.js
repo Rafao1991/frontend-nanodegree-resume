@@ -1,11 +1,3 @@
-//$("#main").append(["Rafael Sousa"]);
-
-// var awesomeThouhts = "I am Rafael Sousa and I am AWESOME!"
-// console.log(awesomeThouhts);
-
-// var funThouhts = awesomeThouhts.replace("AWESOME", "FUN");
-// $("#main").append(funThouhts);
-
 var bio = {
 	name : "Rafael Sousa ",
 	role : "Software Developer ",
@@ -16,7 +8,7 @@ var bio = {
 		location : "São Paulo"
 	},
 	pictureURL : "images/me.jpg",
-	welcomeMessae : "Welcome to my resume I expect that you like my bio and contact me to exchange knowledge.",
+	welcomeMessage : "Welcome to my resume I expect that you like my bio and contact me to exchange knowledge.",
 	skills : [
 		" Mobile development",
 		" Javascript",
@@ -24,6 +16,81 @@ var bio = {
 	]
 };
 
+var work = { 
+	jobs : [
+		{
+			employer : "Resource IT",
+			title : "Mobile Developer",
+			location : "São Paulo, SP - Brazil",
+			datesWorked : "2012 - today",
+			description : "Native Android development and Kony development"
+		},
+		{
+			employer : "Softtek do Brasil",
+			title : "Power Builder Developer",
+			location : "São Paulo, SP - Brazil",
+			datesWorked : "2011 - 2012",
+			description : "PowerScript development"
+		},
+		{
+			employer : "Grupo Meta",
+			title : "Java Developer",
+			location : "São Paulo, SP - Brazil",
+			datesWorked : "2011 - 2011",
+			description : "Java development"
+		}
+	]
+};
+
+var projects = {
+	project : [
+		{
+			title : "Santander",
+			dates : "2015 - today",
+			description : "Mobile banking using native Android"
+		},
+		{
+			title : "Itaú",
+			dates : "2014 - 2015",
+			description : "Mobile banking using KONY and than a new project with native Android"
+		},
+		{
+			title : "Honda",
+			dates : "2013 - 2013",
+			description : "Very first project delivered using KONY in Brazil"
+		}
+	]
+};
+
+var education = {
+	schools : [
+		{
+			name : "SENAC",
+			location : "São Paulo, SP - Brazil",
+			degree : "Information System",
+			majors : ["BA"],
+			dates : "2010 - 2015",
+			url : "http://www.sp.senac.br"
+		}
+	],
+	onlineCourses : [
+		{
+			title : "Gamification",
+			school : "FIAP",
+			dates : "2016",
+			url : "http://www.fiap.com.br"
+		},
+		{
+			title : "Git and Github",
+			school : "UDACITY",
+			dates : "2016",
+			url : "http://www.udacity.com"
+		}
+	]
+};
+
+
+/*
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
@@ -31,8 +98,11 @@ var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
 var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
 var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
-var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessae);
+var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var formattedSkills = HTMLskills.replace("%data%", bio.skills);
+
+var formattedWorkPosition = HTMLworkTitle.replace("%data%", work["position"]);
+var formattedEducationName = HTMLschoolName.replace("%data%", education[0].name);
 
 $("#header").prepend(formattedSkills);
 $("#header").prepend(formattedWelcomeMessage);
@@ -43,3 +113,7 @@ $("#header").prepend(formattedEmail);
 $("#header").prepend(formattedMobile);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
+
+$("#main").append(formattedWorkPosition);
+$("#main").append(formattedEducationName);
+*/
